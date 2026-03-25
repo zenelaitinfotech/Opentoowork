@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://job-portal-backend.onrender.com";
 
 const AdminJobs = () => {
   const { toast } = useToast();

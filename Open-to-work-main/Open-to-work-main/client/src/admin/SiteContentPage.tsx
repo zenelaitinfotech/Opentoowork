@@ -1,7 +1,7 @@
 import { useSiteContent } from "../contexts/SiteContentContext";
 import { useToast } from "@/hooks/use-toast";
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://job-portal-backend.onrender.com";
 
 const SiteContentPage = () => {
   const { content, setContent } = useSiteContent();

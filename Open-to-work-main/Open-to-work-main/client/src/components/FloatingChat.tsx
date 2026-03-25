@@ -3,7 +3,7 @@ import { MessageCircle, X, Send } from "lucide-react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://job-portal-backend.onrender.com";
 
 const FloatingChat = () => {
   const [isOpen, setIsOpen] = useState(false);

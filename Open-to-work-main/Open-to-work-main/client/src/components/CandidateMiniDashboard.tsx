@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { useNavigate } from "react-router-dom";
 import { useToast } from "@/hooks/use-toast";
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://job-portal-backend.onrender.com";
 
 const CandidateMiniDashboard = () => {
   const { toast } = useToast();

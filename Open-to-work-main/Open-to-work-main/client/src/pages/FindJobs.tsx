@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import FloatingChat from "@/components/FloatingChat";
 import { Building2, MapPin, DollarSign, Briefcase, Search } from "lucide-react";
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://job-portal-backend.onrender.com";
 
 const FindJobs = () => {
   const navigate = useNavigate();

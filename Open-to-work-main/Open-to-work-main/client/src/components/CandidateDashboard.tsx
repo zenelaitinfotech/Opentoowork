@@ -8,7 +8,7 @@ import {
 } from "lucide-react";
 
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://job-portal-backend.onrender.com";
 
 const CandidateDashboard = () => {
   const { toast } = useToast();

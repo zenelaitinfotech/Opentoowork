@@ -34,7 +34,17 @@ const app = express();
 const __dirname = path.resolve();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+origin: function(origin, callback){
+if(!origin) return callback(null, true); // allow Postman / curl
+if(allowedOrigins.includes(origin)){
+return callback(null, true);
+} else {
+return callback(new Error("Not allowed by CORS"));
+}
+},
+credentials: true
+}));
 app.use(express.json());
 app.use("/api/site-content", siteContentRoutes);
 app.use("/api/contact", contactRoutes);

@@ -12,7 +12,7 @@ import { Search, MapPin } from "lucide-react";
 import { useSiteContent } from "@/hooks/useSiteContent";
 
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://job-portal-backend.onrender.com";
 
 const Index = () => {
    

@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 
 
 
-const API = "http://localhost:5000";
+const API = "https://job-portal-backend.onrender.com";
 
 const CandidateProfile = () => {
   const { toast } = useToast();

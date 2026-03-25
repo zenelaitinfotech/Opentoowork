@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Building2, MapPin, DollarSign, Briefcase } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://job-portal-backend.onrender.com";
 
 export default function LatestOpportunities() {
   const navigate = useNavigate();
