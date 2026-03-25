@@ -34,6 +34,12 @@ const app = express();
 const __dirname = path.resolve();
 
 // Middleware
+const allowedOrigins = [
+"http://localhost:8080", // local dev
+"https://opentoowork.net", // Hostinger frontend
+"https://job-portal-frontend.onrender.com" // old frontend
+];
+
 app.use(cors({
 origin: function(origin, callback){
 if(!origin) return callback(null, true); // allow Postman / curl
