@@ -34,23 +34,31 @@ const app = express();
 const __dirname = path.resolve();
 
 // Middleware
+
+
+
 const allowedOrigins = [
 "http://localhost:8080", // local dev
-"https://opentoowork.net", // Hostinger frontend
+"https://opentoowork.net", // live frontend
+"https://www.opentoowork.net",// live frontend with www
 "https://job-portal-frontend.onrender.com" // old frontend
 ];
 
 app.use(cors({
 origin: function(origin, callback){
-if(!origin) return callback(null, true); // allow Postman / curl
-if(allowedOrigins.includes(origin)){
+console.log("Request origin:", origin); // Debug: see what browser sends
+if (!origin) return callback(null, true); // allow Postman / curl
+if (allowedOrigins.includes(origin)) {
 return callback(null, true);
 } else {
-return callback(new Error("Not allowed by CORS"));
+return callback(new Error(`Not allowed by CORS: ${origin}`));
 }
 },
 credentials: true
 }));
+
+
+
 app.use(express.json());
 app.use("/api/site-content", siteContentRoutes);
 app.use("/api/contact", contactRoutes);
