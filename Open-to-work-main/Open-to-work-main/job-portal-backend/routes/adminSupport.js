@@ -1,12 +1,12 @@
 import express from "express";
 import Support from "../models/Support.js";
 import Candidate from "../models/Candidate.js";
-import { authMiddleware } from "../middleware/authMiddleware.js";
+import { authMiddleware,protectAdmin } from "../middleware/authMiddleware.js";
 
 const router = express.Router();
 
 // GET /api/admin/support-queries
-router.get("/support-queries", authMiddleware, async (req, res) => {
+router.get("/support-queries", authMiddleware,protectAdmin, async (req, res) => {
   try {
     const queries = await Support.findAll({
       include: [

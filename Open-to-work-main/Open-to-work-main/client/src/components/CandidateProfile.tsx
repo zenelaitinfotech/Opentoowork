@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 
 
 
-const API = "https://job-portal-backend.onrender.com";
+const API = "https://opentoowork.onrender.com";
 
 const CandidateProfile = () => {
   const { toast } = useToast();

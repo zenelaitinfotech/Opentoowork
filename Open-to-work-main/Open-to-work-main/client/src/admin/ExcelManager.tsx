@@ -12,7 +12,7 @@ const ExcelManager = () => {
   const [headers, setHeaders] = useState<string[]>([]);
   const [fileId, setFileId] = useState<string>("");
 
-  const API = "https://job-portal-backend.onrender.com/api/excel";
+  const API = "https://opentoowork.onrender.com/api/excel";
 
   // ================= AUTO LOAD AFTER REFRESH =================
   useEffect(() => {

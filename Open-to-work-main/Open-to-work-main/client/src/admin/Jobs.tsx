@@ -11,8 +11,9 @@ import {
   Select, SelectTrigger, SelectValue, SelectContent, SelectItem,
 } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
+import { API_URL } from "@/config";
 
-const API_URL = "https://job-portal-backend.onrender.com";
+
 
 const AdminJobs = () => {
   const { toast } = useToast();

@@ -10,9 +10,9 @@ import { useNavigate } from "react-router-dom";
 import bgImage from "@/assets/hero-boardroom.jpg";
 import { Search, MapPin } from "lucide-react";
 import { useSiteContent } from "@/hooks/useSiteContent";
+import { API_URL } from "@/config";
 
 
-const API_URL = "https://job-portal-backend.onrender.com";
 
 const Index = () => {
    

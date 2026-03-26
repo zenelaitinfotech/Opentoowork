@@ -2,8 +2,8 @@ import { useState } from "react";
 import { MessageCircle, X, Send } from "lucide-react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
+import { API_URL } from "@/config";
 
-const API_URL = "https://job-portal-backend.onrender.com";
 
 const FloatingChat = () => {
   const [isOpen, setIsOpen] = useState(false);

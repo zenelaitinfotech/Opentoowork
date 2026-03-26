@@ -9,8 +9,9 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import { API_URL } from "@/config";
 
-const API_URL = "https://job-portal-backend.onrender.com";
+
 
 const JobDetail = () => {
   const { id } = useParams();

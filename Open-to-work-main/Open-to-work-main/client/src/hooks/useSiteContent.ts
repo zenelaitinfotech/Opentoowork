@@ -1,6 +1,7 @@
+import { API_URL } from "@/config";
 import { useState, useEffect } from "react";
 
-const API_URL = "https://job-portal-backend.onrender.com";
+
 
 const defaultContent = {
   hero: {

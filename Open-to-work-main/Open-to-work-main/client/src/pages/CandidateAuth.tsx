@@ -7,8 +7,9 @@ import { Card } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useToast } from "@/hooks/use-toast";
 import { UserCircle } from "lucide-react";
+import { API_URL } from "@/config";
 
-const API_URL = "https://job-portal-backend.onrender.com"; // ✅ backend URL
+ // ✅ backend URL
 
 const CandidateAuth = () => {
   const navigate = useNavigate();
@@ -108,7 +109,7 @@ const handleForgotPassword = async (e: React.FormEvent) => {
   setLoading(true);
 
   try {
-    const res = await fetch("https://job-portal-backend.onrender.com/api/auth/forgot-password", {
+    const res = await fetch("https://opentoowork.onrender.com/api/auth/forgot-password", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email }),

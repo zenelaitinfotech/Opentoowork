@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useToast } from "@/hooks/use-toast";
 
-const API = "https://job-portal-backend.onrender.com";
+const API = "https://opentoowork.onrender.com";
 
 interface SupportQuery {
   _id: string;

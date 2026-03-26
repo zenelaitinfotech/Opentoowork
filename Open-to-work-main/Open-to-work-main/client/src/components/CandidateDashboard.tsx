@@ -6,9 +6,10 @@ import {
   Building2, MapPin, Calendar, Clock, CheckCircle,
   XCircle, Pencil, FileText, Upload, LogOut
 } from "lucide-react";
+import { API_URL } from "@/config";
 
 
-const API_URL = "https://job-portal-backend.onrender.com";
+
 
 const CandidateDashboard = () => {
   const { toast } = useToast();

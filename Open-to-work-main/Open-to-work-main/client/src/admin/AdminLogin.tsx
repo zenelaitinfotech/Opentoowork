@@ -11,7 +11,7 @@ const AdminLogin = () => {
   e.preventDefault();
 
   try {
-    const { data } = await axios.post("https://job-portal-backend.onrender.com/api/auth/login", {
+    const { data } = await axios.post("https://opentoowork.onrender.com/api/auth/login", {
       username,
       password,
     });

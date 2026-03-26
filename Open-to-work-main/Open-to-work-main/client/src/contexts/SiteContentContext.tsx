@@ -1,8 +1,8 @@
 // src/contexts/SiteContentContext.tsx
 import { createContext, useContext, ReactNode, useState, useEffect } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { API_URL } from "@/config";
 
-const API_URL = "https://job-portal-backend.onrender.com";
 
 // Types
 type HeroContent = { heading: string; subtitle: string };

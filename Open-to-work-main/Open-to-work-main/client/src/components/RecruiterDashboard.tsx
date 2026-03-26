@@ -20,8 +20,8 @@ import {
 } from "./ui/select";
 import { useToast } from "@/hooks/use-toast";
 import { Plus, Eye, Pencil, Trash2 } from "lucide-react";
+import { API_URL } from "@/config";
 
-const API_URL = "https://job-portal-backend.onrender.com";
 
 const EmployerDashboard = () => {
   const { toast } = useToast();
